@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INTERACTIVE WEB PAGES</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <h1>Welcome to JavaScript</h1>
+
+  <!-- Click Event -->
+  <button id="clickMeBtn">Click Me!</button>
+  <p id="clickMessage" class="hidden">You clicked the button!</p>
+  <div>
+     <button onclick="alert('Button Clicked!')">Click here!</button>
+     <input type="text" id="inputField" placeholder="Type here...">
+  </div>
+
+  <!-- Mouseover Event -->
+  <div id="hoverBox">Hover over this box</div>
+  <p id="hoverInfo" class="hidden">Thanks for hovering!</p>
+  <br>
+
+  <!-- Counter -->
+  <h2>Button Game: Click Counter</h2>
+  <button id="countBtn">Click to Count</button>
+  <p>Click Count: <span id="clickCount">0</span></p>
+
+  <!-- Light/Dark Mode Toggle -->
+  <button id="toggleTheme">Toggle Dark/Light Mode</button>
+  <br>
+
+  <!-- Collapsible FAQ Section -->
+  <h2>FAQ</h2>
+  <div class="faq-item">
+    <button class="faq-question">What is JavaScript?</button>
+    <p class="faq-answer hidden">JavaScript is a scripting language used to create dynamic web content.</p>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">Why use event listeners?</button>
+    <p class="faq-answer hidden">Event listeners allow your page to respond to user actions in real time.</p>
+  </div>
+  <br>
+
+  <section>
+    <h2>Select a programming language</h2>
+<div class="dropdown">
+  <button id="dropdownBtn">Select Option ▼</button>
+  <ul id="dropdownMenu" class="hidden dropdown-menu">
+    <li class="dropdown-item">Python</li>
+    <li class="dropdown-item">CSS</li>
+    <li class="dropdown-item">C++</li>
+  </ul>
+</div>
+<p id="selectedOption"></p>
+  </section>
+  <br>
+
+  <!-- Form Validation -->
+  <h2>Register</h2>
+  <form id="registerForm">
+    <label>Name: <input type="text" id="name" /></label><br>
+    <label>Email: <input type="text" id="email" /></label><br>
+    <label>Password: <input type="password" id="password" /></label><br>
+    <button type="submit">Submit</button>
+    <p id="formMessage"></p>
+  </form>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>

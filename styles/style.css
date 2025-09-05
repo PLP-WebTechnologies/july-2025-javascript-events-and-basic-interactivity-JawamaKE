@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+  font-family: sans-serif;
+  background-color: peachpuff;
+  color: blue;
+  text-align: justify;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+input {
+  margin: 5px;
+  padding: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Hover box */
+#hoverBox {
+  width: 200px;
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* FAQ styles */
+.faq-item {
+  margin: 10px 0;
+}
+
+.faq-answer {
+  margin-left: 10px;
+  font-style: italic;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode input,
+.dark-mode button {
+  background-color: black;
+  color: white;
+  border: 1px solid grey;
+}
+
+.dark-mode #hoverBox {
+  background-color: grey;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+  background: lightgreen;
+  position: absolute;
+  width: 150px;
+  z-index: 10;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: lightblue;
+}
